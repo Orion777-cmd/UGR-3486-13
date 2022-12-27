@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamezReview.com</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <div class="nav-list">
+                <div class="logo">
+                    <a href="#">
+                        GamezReview
+                    </a>
+                </div>
+                <button
+                    type="button"
+                    aria-controls="header-nav-list"
+                    aria-expanded="false"
+                    aria-label="Expand Menu"
+                    id="bars"
+                    class="menu-btn">
+                    <img src="./logos/bars.svg" alt="Hamburger" width="25" height="25" />
+                </button>
+                <button
+                    type="button"
+                    aria-controls="header-nav-list"
+                    aria-expanded="true"
+                    aria-label="Collapse Menu"
+                    id="xmark"
+                    class="menu-btn">
+                    <img src="./logos/xmark.svg" alt="xmark" width="25" height="25"/>
+                </button>
+                <ul id="header-nav-list">
+    
+                    <li class="archive-nav">
+                        <a href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="contact-nav">
+                        <a href="contact.html">
+                            Contact 
+                        </a>
+                    </li>
+                    <li class="about-nav">
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+           
+        </nav>
+
+        <section class="hero">
+            <h1> GamezReview</h1>
+            <p class="headline">
+                Review Games. Find the Best virtual Exposure that 
+                you want to experience.
+            </p>
+
+            <div class="explore">
+                <form action="./search.html">
+                    <input type="text" name="text-area" placeholder="search for a game">
+                    <button name="search" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+    </header>
+    <br>
+    <main class="main">
+        <div class="pouplar">
+            <h2 class="popular-games">
+                popular Games
+            </h2>
+            <button type="button" name="load" aria-label="load more popular games">
+                Load More
+            </button>
+        </div>
+        <div class="popular-games-picture">
+             <!--
+                the bottom link is a temporary anchor tag set to 
+                visualize how the sitemap works.
+            -->
+            <a href="description.html">To Description page</a>
+            <!--
+                this will be filled using javascript 
+
+                 <a href="description.html">
+                    <img src="" alt="" width="70" height="70">
+                    <div id="desc">
+                        <p>name</p>
+                        <p>rating</p>
+                    </div>
+                
+                </a>
+            -->
+
+        </div>
+    </main>
+    <br>
+    <footer class="footer">
+        <div class="footer-logo">
+          
+            <a href="index.html">GamezReview</a>
+            
+        </div>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
+                <img src="/logos/linkedin.svg" alt="linkdin account" width="50" height="50">
+            </a>
+            <a href="https://www.instagram.com/abiy.biru78/">
+                <img src="/logos/instagram.svg" alt="instagram account" width="50" height="50">
+            </a>
+            <a href="https://t.me/pealov">
+                <img src="/logos/telegram.svg" alt="telegram account" width="50" height="50">
+            </a>
+            <a href="https://twitter.com/biru_abiy">
+                <img src="/logos/twitter.svg" alt="twitter account" width="50" height="50">
+            </a>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="home-nav">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="archive-nav">
+                    <a href="archive.html">
+                        Archive
+                    </a>
+                </li>
+                <li class="contact-nav">
+                    <a href="contact.html">
+                        Contact 
+                    </a>
+                </li>
+                <li class="about-nav">
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 GamezReview</p>
+        </div>
+    </footer>
+</body>
+</html>

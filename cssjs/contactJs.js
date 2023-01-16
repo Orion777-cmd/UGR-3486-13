@@ -22,7 +22,7 @@ const validateForm = ()=>{
         emailMessage.innerHTML = '';
         return false;
     }else if(!(name[0].match(/^[A-Za-z]+$/) && name[1].match(/^[A-Za-z]+$/))){
-        nameMessage.innerHTML("<p>name should only contains letters</p>")
+        nameMessage.innerHTML="<p>name should only contains letters</p>";
         serverMessage.innerHTML ='';
         emailMessage.innerHTML = '';
         return false;

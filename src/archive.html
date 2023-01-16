@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Archive</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../cssjs/styles.css" />
+    <link rel="stylesheet" href="../cssjs/fonts.css" />
+    <link rel="stylesheet" href="../cssjs/archiveStyle.css" />
+    <script src="../cssjs/indexScript.js" defer></script>
+    <script src="../cssjs/archiveJs.js" defer></script>
   </head>
   <body>
-    <header >
-      <nav >
-        <div >
-          <div >
-            <a href="index.html"> GamezReview </a>
-          </div>
+    <header class="header">
+      <nav class="header__main-nav">
+        <div class="logo">
+          <a href="index.html"> GamezReview </a>
+        </div>
+        <div class="header__media_buttons">
           <button
             type="button"
             aria-controls="header-nav-list"
             aria-expanded="false"
             aria-label="Expand Menu"
             id="bars"
-          
+            class="menu-btn"
           >
             <img
               src="./images/bars.svg"
@@ -35,176 +40,562 @@
             aria-expanded="true"
             aria-label="Collapse Menu"
             id="xmark"
-            
+            class="menu-btn none"
           >
             <img src="./images/xmark.svg" alt="xmark" width="25" height="25" />
           </button>
-          <ul id="header-nav-list">
-            <li >
-              <a href="archive.html"> Archive </a>
-            </li>
-            <li >
-              <a href="contact.html"> Contact </a>
-            </li>
-            <li >
-              <a href="about.html"> About </a>
-            </li>
-          </ul>
         </div>
+
+        <ul id="header--nav-list" class="navlist toggleList">
+          <li>
+            <a href="archive.html"> Archive </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+          <li>
+            <a href="about.html"> About </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main >
-      <section >
-        <form action="search.html">
-          <input type="text" name="text-area" placeholder="search for a game" />
+    <main>
+      <section class="main__section">
+        <div class="archive--search">
+          <form action="./search.html">
+            <input
+              type="text"
+              name="name"
+              placeholder="search for a game"
+            />
+            <button
+              type="submit"
+              aria-label="search games by their official name"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="filter-toggle">
           <button
-            name="search"
-            type="submit"
-            aria-label="search games by their official name"
+            type="button"
+            name="filter"
+            aria-label="toggle popular tags and genres"
+            class="filter"
           >
-            Search
+            Filter
           </button>
-        </form>
-        <button
-          type="button"
-          name="filter"
-          aria-label="toggle popular tags and genres"
-        >
-          Filter
-        </button>
 
-        <div >
-          <button id="action" data-genre="true">Action</button>
-          <button id="adventure" data-genre="true">Adventure</button>
-          <button id="rpg" data-genre="true">RPG</button>
-          <button id="strategy" data-genre="true">Strategy</button>
-          <button id="shooter" data-genre="true">Shooter</button>
-          <button id="puzzle" data-genre="true">Puzzle</button>
-          <button id="Arcade" data-genre="true">Arcade</button>
-          <button id="racing" data-genre="true">racing</button>
-          <button id="sports" data-genre="true">sports</button>
-          <button id="fighting" data-genre="true">fighting</button>
-          <button id="family" data-genre="true">family</button>
-          <button id="educational" data-genre="true">educational</button>
-          <button id="card" data-genre="true">card</button>
-          <button id="Singleplayer" data-genre="false">Singleplayer</button>
-          <button id="Multiplayer" data-genre="false">Multiplayer</button>
-          <button id="Athmospheric" data-genre="false">Athmospheric</button>
-          <button id="Full-controller-support" data-genre="false">
-            Full-controller-support
-          </button>
-          <button id="Great soundtrack" data-genre="false">
-            Great soundtrack
-          </button>
-          <button id="co-op" data-genre="false">co-op</button>
-          <button id="story rich" data-genre="false">story rich</button>
-          <button id="open world" data-genre="false">open world</button>
-          <button id="survival" data-genre="false">survival</button>
-          <button id="zombies" data-genre="false">zombies</button>
-          <button id="war" data-genre="false">war</button>
-          <button id="first-person" data-genre="false">first-person</button>
-          <button id="third-person" data-genre="false">third-person</button>
-          <button id="2D" data-genre="false">2D</button>
-          <button id="3D" data-genre="false">3D</button>
-          <button id="sci-fi" data-genre="false">sci-fi</button>
-          <button id="horror" data-genre="false">horror</button>
-          <button id="Fantasy" data-genre="false">Fantasy</button>
-          <button id="Funny" data-genre="false">Funny</button>
-          <button id="Classic" data-genre="false">Classic</button>
-          <button id="Exploration" data-genre="false">Exploration</button>
-          <button id="Anime" data-genre="false">Anime</button>
-          <button id="simulation" data-genre="false">simulation</button>
+          <div class="filter-option toggleList">
+            <button id="action" data-genre="true">Action</button>
+            <button id="adventure" data-genre="true">Adventure</button>
+            <button id="sport" data-genre="true">sport</button>
+            <button id="war" data-genre="false">war</button>
+            <button id="horror" data-genre="false">horror</button>
+          </div>
         </div>
       </section>
 
       <section>
-        <div id="all-games">
-            <!--
-                the bottom link is a temporary anchor tag set to 
-                visualize how the sitemap works.
-            -->
-            <a href="description.html">To Description page</a>
-
-            <!--
-                
-                this content will be filled using javascript
-    
-                <a href="description.html">
-                    <img src="" alt="" width="70" height="70">
-                    <div id="desc">
-                        <p>name</p>
-                        <p>rating</p>
-                    </div>
-                
-                </a>    
-
-            -->
+        <div class="main__popular-games">
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/Grand Theft Auto V/mainImage.jpg"
+              alt="image of the game GTA V"
+              
+            />
+            <div id="desc">
+              <p>Grand Theft Auto V</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/The witcher wild hunt/mainImage.jpg"
+              alt="image of the game the witcher wild hunt"
+              
+            />
+            <div id="desc">
+              <p>The Witcher</p>
+              <p>4.6</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/apex legends/mainImage.jpg"
+              alt="image of the game apex legends"
+              
+            />
+            <div id="desc">
+              <p>Apex Legends</p>
+              <p>4.2</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/Assassins Creed IV Black Flag/mainImage.jpg"
+              alt="image of the game assasin's creed IV"
+              
+            />
+            <div id="desc">
+              <p>Assasin's Creed IV</p>
+              <p>4.34</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/Batman Arkham night/mainImage.jpg"
+              alt="image of the game batman arkham night"
+              
+            />
+            <div id="desc">
+              <p>Batman Arkham night</p>
+              <p>4.12</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/bioshock/mainImage.jpg"
+              alt="image of the game bioshock"
+              
+            />
+            <div id="desc">
+              <p>Bioshock</p>
+              <p>3.9</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/borderlands 2/mainImage.jpg"
+              alt="image of the game borderlands 2"
+              
+            />
+            <div id="desc">
+              <p>Borderlands 2</p>
+              <p>3.8</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="action">
+            <img
+              src="./images/GameImages/control/mainImage.jpg"
+              alt="image of the game control"
+              
+            />
+            <div id="desc">
+              <p>Control</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/cyberpunk 2077/mainImage.jpg"
+              alt="image of the game cyberpunk 2077"
+              
+            />
+            <div id="desc">
+              <p>cyberpunk 2077</p>
+              <p>4.3</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/dark souls III/mainImage.jpg"
+              alt="image of the game dark souls III"
+              
+            />
+            <div id="desc">
+              <p>Dark souls III</p>
+              <p>4.1</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/Dead cells/mainImage.jpg"
+              alt="image of the game dead cells"
+              
+            />
+            <div id="desc">
+              <p>Dead cells</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/Dead space/mainImage.jpg"
+              alt="image of the game dead space"
+              
+            />
+            <div id="desc">
+              <p>Dead Space</p>
+              <p>3.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/dishonoured/mainImage.jpg"
+              alt="image of the game Dishonoured"
+              
+            />
+            <div id="desc">
+              <p>Dishonoured</p>
+              <p>4.54</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/Doom/mainImage.jpg"
+              alt="image of the game doom"
+              
+            />
+            <div id="desc">
+              <p>Doom</p>
+              <p>4.15</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/God of War/mainImage.jpg"
+              alt="image of the game god of war"
+              
+            />
+            <div id="desc">
+              <p>god of War</p>
+              <p>4.75</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/half life 2/mainImage.jpg"
+              alt="image of the game half life 2"
+              
+            />
+            <div id="desc">
+              <p>Half life 2</p>
+              <p>4.25</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/Hitman/mainImage.jpg"
+              alt="image of the game htiman"
+              
+            />
+            <div id="desc">
+              <p>Hitman</p>
+              <p>4.85</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/horizon zero dawn/mainImage.jpg"
+              alt="image of the game horizon zero dawn"
+              
+            />
+            <div id="desc">
+              <p>horizon zero dawn</p>
+              <p>4.35</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards"   data-genre="adventure">
+            <img
+              src="./images/GameImages/injustice gods/mainImage.jpg"
+              alt="image of the game injustice gods"
+              
+            />
+            <div id="desc">
+              <p>Injustice gods</p>
+              <p>3.8</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/Just Cause 3/mainImage.jpg"
+              alt="image of the game just cause 3"
+              
+            />
+            <div id="desc">
+              <p>Just Cause 3</p>
+              <p>4.0</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/left 4 dead 2/mainImage.jpg"
+              alt="image of the game left for dead"
+              
+            />
+            <div id="desc">
+              <p>left 4 dead</p>
+              <p>4.45</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/life is strange/mainImage.jpg"
+              alt="image of the game life is strange"
+              
+            />
+            <div id="desc">
+              <p>life is strange</p>
+              <p>3.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/Little Nightmares/mainImage.jpg"
+              alt="image of the game Little nightmares"
+              
+            />
+            <div id="desc">
+              <p>Little Nightmares</p>
+              <p>4.25</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/Marvel's spiderman/mainImage.jpg"
+              alt="image of the game spiderman"
+              
+            />
+            <div id="desc">
+              <p>Marvel's Spiderman</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/metro 2033/mainImage.jpg"
+              alt="image of the game metro 2033"
+              
+            />
+            <div id="desc">
+              <p>Metro 2033</p>
+              <p>4.05</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/middle earth shadow of mordor/mainImage.jpg"
+              alt="image of the game middle earth"
+              
+            />
+            <div id="desc">
+              <p>Middle Earth</p>
+              <p>4.6</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="horror">
+            <img
+              src="./images/GameImages/payday 2/mainImage.jpg"
+              alt="image of the game payday 2"
+              
+            />
+            <div id="desc">
+              <p>Payday 2</p>
+              <p>4.25</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/portal/mainImage.jpg"
+              alt="image of the game"
+              
+            />
+            <div id="desc">
+              <p>Portal 2</p>
+              <p>4.75</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/prey/mainImage.jpg"
+              alt="image of the game prey"
+              
+            />
+            <div id="desc">
+              <p>Prey</p>
+              <p>4.15</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/PUBG/mainImage.jpg"
+              alt="image of the game pubg"
+              
+            />
+            <div id="desc">
+              <p>PUBG</p>
+              <p>4.3</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/Red dead redemption 2/mainImage.jpg"
+              alt="image of the game red dead redemption"
+              
+            />
+            <div id="desc">
+              <p>Red Dead REdemption</p>
+              <p>4.25</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/Rocket Leauge/mainImage.jpg"
+              alt="image of the game rocket league"
+              
+            />
+            <div id="desc">
+              <p>Rocket League</p>
+              <p>3.65</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/spec ops the line/mainImage.jpg"
+              alt="image of the game spec ops the line"
+              
+            />
+            <div id="desc">
+              <p>spec ops the line</p>
+              <p>4.45</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/Star Wars Jedi fallen order/mainImage.jpg"
+              alt="image of the game star wars jedi"
+              
+            />
+            <div id="desc">
+              <p>Star Wars Jedi</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/The elder scrolls V/mainImage.jpg"
+              alt="image of the game the elder scrolls"
+              
+            />
+            <div id="desc">
+              <p>The elder Scrolls</p>
+              <p>4.15</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="war">
+            <img
+              src="./images/GameImages/the last of us/mainImage.jpg"
+              alt="image of the game the last of us"
+              
+            />
+            <div id="desc">
+              <p>The Last of Us</p>
+              <p>4.0</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/The withcher 2 assasin of kings/mainImage.jpg"
+              alt="image of the game the witcher 2"
+              
+            />
+            <div id="desc">
+              <p>The Witcher 2</p>
+              <p>4.5</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/Tomb-raider/mainImage.jpg"
+              alt="image of the game Tomb-raider"
+              
+            />
+            <div id="desc">
+              <p>Tomb Raider</p>
+              <p>4.05</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/warframe/mainImage.jpg"
+              alt="image of the game warframe"
+              
+            />
+            <div id="desc">
+              <p>Warframe</p>
+              <p>4.35</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/watch dog/mainImage.jpg"
+              alt="image of the game watch dog"
+              
+            />
+            <div id="desc">
+              <p>Watch Dog</p>
+              <p>4.65</p>
+            </div>
+          </a>
+          <a href="description.html"  class="cards" data-genre="sport">
+            <img
+              src="./images/GameImages/wolfenestien the new order/mainImage.jpg"
+              alt="image of the game wolfenestien"
+              
+            />
+            <div id="desc">
+              <p>Wolfenestien</p>
+              <p>4.3</p>
+            </div>
+          </a>
         </div>
-        
-        <button type="button" aria-label="load for more games">
+
+        <!-- <button type="button" aria-label="load for more games">
           Load More
-        </button>
+        </button> -->
       </section>
     </main>
-    <footer >
-      <div >
-        <a href="index.html">GamezReview</a>
-      </div>
-      <div >
-        <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
-          <img
-            src="/images/linkedin.svg"
-            alt="linkdin account"
-            width="50"
-            height="50"
-          />
-        </a>
-        <a href="https://www.instagram.com/abiy.biru78/">
-          <img
-            src="/images/instagram.svg"
-            alt="instagram account"
-            width="50"
-            height="50"
-          />
-        </a>
-        <a href="https://t.me/pealov">
-          <img
-            src="/images/telegram.svg"
-            alt="telegram account"
-            width="50"
-            height="50"
-          />
-        </a>
-        <a href="https://twitter.com/biru_abiy">
-          <img
-            src="/images/twitter.svg"
-            alt="twitter account"
-            width="50"
-            height="50"
-          />
-        </a>
-      </div>
-      <nav >
-        <div>
-          <ul >
-            <li >
-              <a href="index.html"> Home </a>
-            </li>
-            <li >
-              <a href="archive.html"> Archive </a>
-            </li>
-            <li >
-              <a href="contact.html"> Contact </a>
-            </li>
-            <li >
-              <a href="about.html"> About </a>
-            </li>
-          </ul>
+    <footer>
+      <div class="footer--div">
+        <div class="logo">
+          <a href="index.html">GamezReview</a>
         </div>
-      </nav>
-      <div >
-        <p>Copyright &copy; 2022 GamezReview</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
+            <img src="./images/linkedin.svg" alt="linkdin account" />
+          </a>
+          <a href="https://www.instagram.com/abiy.biru78/">
+            <img src="./images/instagram.svg" alt="instagram account" />
+          </a>
+          <a href="https://t.me/pealov">
+            <img src="./images/telegram.svg" alt="telegram account" />
+          </a>
+          <a href="https://twitter.com/biru_abiy">
+            <img src="./images/twitter.svg" alt="twitter account" />
+          </a>
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright &copy; 2022 GamezReview</p>
+        </div>
       </div>
+
+      <nav class="footer__sitemaps">
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="archive.html"> Archive </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+          <li>
+            <a href="about.html"> About </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

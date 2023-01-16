@@ -1,0 +1,109 @@
+main h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 4rem;
+}
+audio{
+    margin-top: 2rem;
+    width: max(30%, 220px);
+    margin-left: 5%;
+    
+}
+.main--overview{
+    width: 100%;
+}
+.main--overview h1{
+    padding-bottom: 2rem;
+}
+.main--overview p{
+    width: 80%;
+    margin-inline: auto;
+    font-size: 1.25rem;
+}
+.conception{
+    width: 80%;
+    margin-inline: auto;
+    padding-top: 5rem;
+}
+
+.conception img{
+    float: left;
+    width: 20%;
+    font-size: 2rem;
+    height: fit-content;
+    margin-right: 1.5rem;
+    background-image: linear-gradient(to left, green, var(--BACKGROUND-COLOR));
+    border-radius: 50%;
+}
+.conception p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.features--container{
+    width: 80%;
+    margin-inline:auto;
+    margin-top: 8rem;
+    padding-bottom:10rem;
+
+}
+.features--container img{
+    float: right;
+    width: 40%;
+    height: fit-content;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+.features h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.features ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.features li{
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px){
+    .conception, .features--container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .conception img{
+        width: 30%;
+    }
+    .features li{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width:640px){
+    main{
+        padding-top: 4rem;
+    }
+    main h1{
+        font-size: 2rem;
+        
+    }
+    .main--overview h1{
+        
+        font-size: 1.5rem;
+    }
+   
+    .conception p{
+        font-size:1rem;
+    }
+    .features li{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,99 @@
+.main__section{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.archive--search{
+    
+    width: 60%;
+}
+.archive--search form{
+    display: flex;
+    width: 100%;
+}
+.archive--search input{
+    height: 2rem;
+    width: max(80%, 200px);
+    border-radius: .75rem;
+    border: none;
+    padding-left: 1rem;
+}
+.archive--search input::placeholder{
+    padding-left: 1rem;
+}
+.archive--search button{
+    height:  2rem;
+    width: max(30%,80px);
+    border-radius: 1rem;
+    background-color: var(--BACKGROUND-COLOR);
+    color: var(--TEXT-COLOR);
+    border: none;
+   
+}
+.archive--search button:hover{
+    background-color: var(--TEXT-COLOR);
+    color: var(--BACKGROUND-COLOR);
+}
+.filter-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+}
+.filter-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: .5rem;
+}
+.filter-option button{
+    color: var(--TEXT-COLOR);
+    background: transparent;
+    width: max(40%, 60px);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 1px 1px 3px 2px grey;
+}
+.filter-option button:hover{
+    color: var(--BACKGROUND-COLOR);
+    background-color: var(--TEXT-COLOR);
+    border: none;
+    box-shadow: 1px 1px 3px 2px goldenrod;
+}
+.filter{
+    height:  2rem;
+    width: 60%;
+    border-radius: 1rem;
+    background-color: var(--BACKGROUND-COLOR);
+    color: var(--TEXT-COLOR);
+    border: none;
+    margin-bottom: .5rem;
+}
+.filter-toggle .toggleList, .none{
+    display:none;
+}
+/* utilitiy*/
+
+
+@media  screen and (max-width:400px) {
+    .main__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width:400px){
+    .archive--search form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: center;
+    }
+}

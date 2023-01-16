@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../cssjs/contactStyle.css">
+    <link rel="stylesheet" href="../cssjs/styles.css">
+    <script src="../cssjs/indexScript.js" defer></script>
+    <script src="../cssjs/contactJs.js" defer></script>
 </head>
 <body>
-    <header >
-        <nav >
-            <div >
-                 <div >
-                     <a href="index.html">
-                         GamezReview
-                     </a>
-                 </div>
-                 <button
-                    type="button"
-                    aria-controls="header-nav-list"
-                    aria-expanded="false"
-                    aria-label="Expand Menu"
-                    id="bars"
-                    >
-                    <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
+    <header class="header" >
+        <nav class="header__main-nav">
+            
+            <div class="logo" >
+                <a href="index.html">
+                    GamezReview
+                </a>
+            </div>
+            <div class="header__media_buttons">
+                <button
+                type="button"
+                aria-controls="header-nav-list"
+                aria-expanded="false"
+                aria-label="Expand Menu"
+                id="bars"
+                class="menu-btn "
+                >
+                <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
                 </button>
                 <button
                     type="button"
@@ -31,80 +37,91 @@
                     aria-expanded="true"
                     aria-label="Collapse Menu"
                     id="xmark"
-                    >
+                    class="menu-btn none"
+                >
                     <img src="./images/xmark.svg" alt="xmark" width="25" height="25"/>
                 </button>
-                 <ul id="header-nav-list">
-    
-                    <li >
-                        <a href="archive.html">
-                            Archive
-                        </a>
-                    </li>
-                    <li >
-                        <a href="contact.html">
-                            Contact 
-                        </a>
-                    </li>
-                    <li >
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-                    
-                </ul>
-                 
             </div>
- 
             
-         </nav>
+            <ul id="header--nav-list" class="navlist toggleList">
+    
+                <li >
+                    <a href="archive.html">
+                        Archive
+                    </a>
+                </li>
+                <li >
+                    <a href="contact.html">
+                        Contact 
+                    </a>
+                </li>
+                <li >
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+                
+            </ul>
+            </div>
+        
+       
+    </nav>
     </header>
-    <br>
-    <main >
-        <section>
+
+    <main class="main--contact">
+        <section class="main__contact-form">
             <h1>
                 Any Suggestions?
             </h1>
-            <div >
-                <form action="">
+            
+            <form id="form" method="post" action="" onsubmit="return validateForm()">
                     <div>
-                        <label for="full-name">Full Name: <span>*</span></label>
+                        <label for="full-name">Full Name: </label>
                         <input type="text" name="full-name" id="full-name" placeholder="John Doe">
             
                     </div>
+                    <div class="name-validation-message">
+
+                    </div>
                     <div>
-                        <label for="email">Email: <span>*</span></label>
+                        <label for="email">Email: </label>
                         <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="email-validation-message">
+                        
                     </div>
                     <div >
                         <label for="subject">Subject:</label>
                         <input type="text" name="subject" id="subject" placeholder="subject of the mail">
                     </div>
                     <div >
-                        <label for="message">Message: <span>*</span></label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" placeholder="your message"></textarea>
                     </div>
-                    <button type="button">Send</button>
-                </form>
-            </div>
+                    <div class="main__server--message">
+
+                    </div>
+                    <button id="submit-message" type="button">Send</button>
+            </form>
+            
              
         </section>
-        <section >
+        <section class="main__address">
             <h2>
-                reach Me.
+                Reach Me.
             </h2>
 
             <address >
                 <div >
-                    <h3>Email</h3>
+                    <h3>Email:</h3>
                     <p>abiy.biru78@gmail.com</p>
                 </div>
                 <div >
-                    <h3>Phone</h3>
-                    <p>+25196 082 3217</p>
+                    <h3>Phone:</h3>
+                    <p>+251 96 082 3217</p>
                 </div>
                 <div >
-                    <h3>Address</h3>
+                    <h3>Address:</h3>
                     <p>
                         AAU College of Natural Sciences,<br>
                         Queen Elizabeth Street, 1415 Arada,<br>
@@ -118,56 +135,57 @@
 
     </main>
     <footer>
-        <div>
+        <div class="footer--div">
+            <div class="logo">
           
-            <a href="index.html">GamezReview</a>
-            
-        </div>
-        <div >
-            <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
-                <img src="./images/linkedin.svg" alt="linkdin account" width="50" height="50">
-            </a>
-            <a href="https://www.instagram.com/abiy.biru78/">
-                <img src="./images/instagram.svg" alt="instagram account" width="50" height="50">
-            </a>
-            <a href="https://t.me/pealov">
-                <img src="./images/telegram.svg" alt="telegram account" width="50" height="50">
-            </a>
-            <a href="https://twitter.com/biru_abiy">
-                <img src="./images/twitter.svg" alt="twitter account" width="50" height="50">
-            </a>
-        </div>
-        <nav >
-            <div >
-                <ul >
-                    <li >
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li >
-                        <a href="archive.html">
-                            Archive
-                        </a>
-                    </li>
-                    <li >
-                        <a href="contact.html">
-                            Contact 
-                        </a>
-                    </li>
-                    <li >
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-                    
-                </ul>
+                <a href="index.html">GamezReview</a>
                 
             </div>
-        </nav>
-        <div >
-            <p>Copyright &copy; 2022 GamezReview</p>
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
+                    <img src="./images/linkedin.svg" alt="linkdin account" >
+                </a>
+                <a href="https://www.instagram.com/abiy.biru78/">
+                    <img src="./images/instagram.svg" alt="instagram account" >
+                </a>
+                <a href="https://t.me/pealov">
+                    <img src="./images/telegram.svg" alt="telegram account" >
+                </a>
+                <a href="https://twitter.com/biru_abiy">
+                    <img src="./images/twitter.svg" alt="twitter account" >
+                </a>
+            </div>
+            <div class="footer__copyright" >
+                <p>Copyright &copy; 2022 GamezReview</p>
+            </div>
         </div>
+        
+        <nav class="footer__sitemaps">
+            <ul >
+                <li >
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li >
+                    <a href="archive.html">
+                        Archive
+                    </a>
+                </li>
+                <li >
+                    <a href="contact.html">
+                        Contact 
+                    </a>
+                </li>
+                <li >
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
     </footer>
 </body>
 </html>

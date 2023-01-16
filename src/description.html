@@ -6,84 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Description</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../cssjs/descriptionStyle.css">
+    <link rel="stylesheet" href="../cssjs/styles.css">
+    <script src="../cssjs/indexScript.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav >
-        <div >
-          <div >
-            <a href="index.html"> GamezReview </a>
-          </div>
-          <button
+    <header class="header">
+      <nav class="header__main-nav">
+            
+        <div class="logo" >
+            <a href="index.html">
+                GamezReview
+            </a>
+        </div>
+        <div class="header__media_buttons">
+            <button
             type="button"
             aria-controls="header-nav-list"
             aria-expanded="false"
             aria-label="Expand Menu"
-            id="bars">
-            <img
-              src="./images/bars.svg"
-              alt="Hamburger"
-              width="25"
-              height="25"
-            />
-          </button>
-          <button
-            type="button"
-            aria-controls="header-nav-list"
-            aria-expanded="true"
-            aria-label="Collapse Menu"
-            id="xmark"
-          >
-            <img src="./images/xmark.svg" alt="xmark" width="25" height="25" />
-          </button>
-          <ul id="header-nav-list">
-            <li >
-              <a href="archive.html"> Archive </a>
-            </li>
-            <li >
-              <a href="contact.html"> Contact </a>
-            </li>
-            <li >
-              <a href="about.html"> About </a>
-            </li>
-          </ul>
+            id="bars"
+            class="menu-btn "
+            >
+            <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
+            </button>
+            <button
+                type="button"
+                aria-controls="header-nav-list"
+                aria-expanded="true"
+                aria-label="Collapse Menu"
+                id="xmark"
+                class="menu-btn none"
+            >
+                <img src="./images/xmark.svg" alt="xmark" width="25" height="25"/>
+            </button>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section id="detail">
-        <div >
-          <p>Name of the Game</p>
-          <p>Genre</p>
-          <p>Rating</p>
-          <p>Released Date</p>
-          <p>Developer Name</p>
+        
+        <ul id="header--nav-list" class="navlist toggleList">
 
-          <img
-            src=""
-            alt=" image of the selected game"
-            width="70"
-            height="70"
-          />
+            <li >
+                <a href="archive.html">
+                    Archive
+                </a>
+            </li>
+            <li >
+                <a href="contact.html">
+                    Contact 
+                </a>
+            </li>
+            <li >
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            
+        </ul>
         </div>
-        <div >
-          <p>Description:</p>
-          <!-- <p>
-            description of the game goes here
-          </p> -->
-        </div>
+    
+   
+</nav>
+    </header>
+    <main class="main--description">
+      <section class="section--detail">
+        
+          <div class="detail-container">
+            <div class="detail">
+              <p>Name: Grand Theft Auto V</p>
+              <p>Genre: Action</p>
+              <p>Rating: 4</p>
+              <p>Released Date: 2013-09-17</p>
+              <p>Developer Name: Rockstar Games</p>
+            </div>
+            
+  
+            <img
+              src="./images/GameImages/Grand Theft Auto V/mainImage.jpg"
+              alt=" image of the selected game"
+              
+            />
+          </div>
+          <div class="description" >
+            <p>Description: <br>
+              <br>
+              The story of three unquely-different criminals
+              as they commit daring and profitable heists across the sprawling
+              city of Los Santos. Michael in an ex-con whose past catches up to him
+              when previous crime partner Trevor starts making a name for himself as a 
+              drug-lord of Sandy Shores. Michael agrees to commit a small jewelery store 
+              hiest for his old crime planner Lester. Along with Franklin, a small street
+              hustler looking for a bigger score, they commit the robbery that will set
+              them for life. Daring and insane, the three slowly descend into a downward
+              spiral of death and deception in the city of Los Santos.
+            </p>
+            
+          </div>
+  
+        
       </section>
-      <section >
+      <section class="section--requirement">
         
         <h2>Pc Requirement</h2>
-        <div id="window"></div>
-        <div  id="linux"></div>
-        <div  id="mac"></div>
+        <div class="window">
+          <p>minimum requirements for Windows</p>
+          <table>
+            <thead>
+              <tr>
+                <th>property</th>
+                <th>minimum Requirement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>OS</td>
+                <td>Windows 7 64 bit</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Intel core i5 3470</td>
+              </tr>
+              <tr>
+                <td>RAM storage</td>
+                <td>8 GB</td>
+              </tr>
+              <tr>
+                <td>Ram Graphics</td>
+                <td>NVIDIA GTX 660 2GB</td>
+              </tr>
+              <tr>
+                <td>Available Storage</td>
+                <td>72 GB</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         
       </section>
-      <section >
-        <div id="video-trailer" >
+      <section class="section--trailer">
+        
           <video controls >
 
           <source src="./video/trailer.mp4" type="video/mp4">
@@ -91,97 +151,104 @@
           label="English" default>
         </video>
 
-        </div>
 
-        <div  id="screen-shots">
-          <img
-            src=""
+        <div  id="screen-shots-container">
+          <h3>Screenshots taken from the game</h3>
+          <div class="screenshots">
+            <img
+            src="./images/GameImages/Screenshots/screenshot1.jpg"
             alt="screen shot taken from the game"
-            width="70"
-            height="70"
+           
           />
+          <img
+          src="./images/GameImages/Screenshots/screenshot2.jpg"
+          alt="screen shot taken from the game"
+          
+         />
+          <img
+          src="./images/GameImages/Screenshots/screenshot3.jpg"
+          alt="screen shot taken from the game"
+         
+          />
+          <img
+          src="./images/GameImages/Screenshots/screenshot4.jpg"
+          alt="screen shot taken from the game"
+          
+          />
+          </div>
+          
+
+      
+
         </div>
       </section>
-      <section >
+      <!-- <section >
         <div >
           <a href="./description.html"
             >to the description page of the selected game</a
           >
-          <!-- <a href="description.html">
+           <a href="description.html">
                 <img src="" alt="image of the selected game" width="70" height="70" />
                 <div id="desc">
                   <p>name</p>
                   <p>rating</p>
                 </div>
-            </a> -->
+            </a> 
         </div>
-      </section>
+      </section> -->
     </main>
     <footer >
-      <div >
-        <a href="index.html">GamezReview</a>
-      </div>
-      <div >
-        <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
-          <img
-            src="./images/linkedin.svg"
-            alt="linkdin account"
-            width="50"
-            height="50"
-          />
-        </a>
-
-        <a href="https://www.instagram.com/abiy.biru78/">
-          <img
-            src="./images/instagram.svg"
-            alt="instagram account"
-            width="50"
-            height="50"
-          />
-        </a>
-
-        <a href="https://t.me/pealov">
-          <img
-            src="./images/telegram.svg"
-            alt="telegram account"
-            width="50"
-            height="50"
-          />
-        </a>
-
-        <a href="https://twitter.com/biru_abiy">
-          <img
-            src="./images/twitter.svg"
-            alt="twitter account"
-            width="50"
-            height="50"
-          />
-        </a>
-      </div>
-      <nav >
-        <nav >
-          <ul >
+      <div class="footer--div">
+        <div class="logo">
+      
+            <a href="index.html">GamezReview</a>
+            
+        </div>
+        <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
+                <img src="./images/linkedin.svg" alt="linkdin account" >
+            </a>
+            <a href="https://www.instagram.com/abiy.biru78/">
+                <img src="./images/instagram.svg" alt="instagram account" >
+            </a>
+            <a href="https://t.me/pealov">
+                <img src="./images/telegram.svg" alt="telegram account" >
+            </a>
+            <a href="https://twitter.com/biru_abiy">
+                <img src="./images/twitter.svg" alt="twitter account" >
+            </a>
+        </div>
+        <div class="footer__copyright" >
+            <p>Copyright &copy; 2022 GamezReview</p>
+        </div>
+    </div>
+    
+    <nav class="footer__sitemaps">
+        <ul >
             <li >
-              <a href="index.html"> Home </a>
+                <a href="index.html">
+                    Home
+                </a>
             </li>
-
             <li >
-              <a href="archive.html"> Archive </a>
+                <a href="archive.html">
+                    Archive
+                </a>
             </li>
-
             <li >
-              <a href="contact.html"> Contact </a>
+                <a href="contact.html">
+                    Contact 
+                </a>
             </li>
-
             <li >
-              <a href="about.html"> About </a>
+                <a href="about.html">
+                    About
+                </a>
             </li>
-          </ul>
-        </nav>
-      </nav>
-      <div >
-        <p>Copyright &copy; 2022 GamezReview</p>
-      </div>
+            
+        </ul>
+        
+    </nav>
     </footer>
   </body>
 </html>

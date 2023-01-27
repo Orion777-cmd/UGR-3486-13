@@ -6,122 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../cssjs/contactStyle.css">
-    <link rel="stylesheet" href="../cssjs/styles.css">
-    <script src="../cssjs/indexScript.js" defer></script>
+    <link rel="stylesheet" href="../cssjs/fonts.css">
     <script src="../cssjs/contactJs.js" defer></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules//bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <link rel="stylesheet" href="./css/indexstyle.css">
 </head>
-<body>
+<body class="bg-black">
     <header class="header" >
-        <nav class="header__main-nav">
-            
-            <div class="logo" >
-                <a href="index.html">
-                    GamezReview
-                </a>
-            </div>
-            <div class="header__media_buttons">
-                <button
-                type="button"
-                aria-controls="header-nav-list"
-                aria-expanded="false"
-                aria-label="Expand Menu"
-                id="bars"
-                class="menu-btn "
-                >
-                <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
-                </button>
-                <button
-                    type="button"
-                    aria-controls="header-nav-list"
-                    aria-expanded="true"
-                    aria-label="Collapse Menu"
-                    id="xmark"
-                    class="menu-btn none"
-                >
-                    <img src="./images/xmark.svg" alt="xmark" width="25" height="25"/>
-                </button>
-            </div>
-            
-            <ul id="header--nav-list" class="navlist toggleList">
-    
-                <li >
-                    <a href="archive.html">
-                        Archive
-                    </a>
-                </li>
-                <li >
-                    <a href="contact.html">
-                        Contact 
-                    </a>
-                </li>
-                <li >
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
+        <div class=" my-gradient rounded-bottom-4 py-4">
+
+            <nav class=" container-md navbar navbar-expand-md navbar-dark" >
                 
-            </ul>
-            </div>
+                    <div class="" >
+                        <a href="index.html" class="navbar-brand border border-5 border-white hover-success ">
+                            GamezReview
+                        </a>
+                    </div>    
+    
+                    <button class="navbar-toggler me-2 mt-2 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navmenu">
+                      <ul id="header--nav-list" class="navbar-nav  ms-auto text-end pe-4">
         
-       
-    </nav>
+                        <li class="nav-item " >
+                            <a href="archive.html" class="link nav-link">
+                                Archive
+                            </a>
+                        </li>
+                        <li class="nav-item " >
+                            <a href="contact.html" class="link nav-link">
+                                Contact 
+                            </a>
+                        </li >
+                        <li class="nav-item ">
+                            <a href="about.html" class="link nav-link">
+                                About
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                
+               
+            </nav>
+          </div>
     </header>
 
-    <main class="main--contact">
-        <section class="main__contact-form">
-            <h1>
+    <main class="main--contact main-gradient text-white container-md py-5 d-flex flex-column align-items-center gap-5 flex-md-row justify-content-around">
+        <section class="main__contact-form d-flex flex-column align-items-center">
+            <h1 class="py-5">
                 Any Suggestions?
             </h1>
             
-            <form id="form" method="post" action="" onsubmit="return validateForm()">
-                    <div>
-                        <label for="full-name">Full Name: </label>
-                        <input type="text" name="full-name" id="full-name" placeholder="John Doe">
+            <form id="form" class="d-flex flex-column gap-4 align-items-center" method="post" action="" onsubmit="return validateForm()">
+                    <div class="d-flex justify-content-around align-items-center" >
+                        <label  class="pe-5" for="full-name">Full Name: </label>
+                        <input class="ps-3 rounded-4 border-0" type="text" name="full-name" id="full-name" placeholder="John Doe">
             
                     </div>
-                    <div class="name-validation-message">
+                    <div class="name-validation-message text-danger fw-bolder">
 
                     </div>
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label class="pe-5 "for="email">Email: </label>
+                        <input class="ps-3 rounded-4 border-0" type="email" name="email" id="email" placeholder="johndoe@gmail.com">
                     </div>
-                    <div class="email-validation-message">
+                    <div class="email-validation-message text-danger">
                         
                     </div>
-                    <div >
-                        <label for="subject">Subject:</label>
-                        <input type="text" name="subject" id="subject" placeholder="subject of the mail">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label class="pe-5" for="subject">Subject:</label>
+                        <input class="ps-3 rounded-4 border-0" type="text" name="subject" id="subject" placeholder="subject of the mail">
                     </div>
-                    <div >
-                        <label for="message">Message: </label>
-                        <textarea name="message" id="message" placeholder="your message"></textarea>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label class="pe-5" for="message">Message: </label>
+                        <textarea class="form-control rounded-3" name="message" id="message" placeholder="your message"></textarea>
                     </div>
-                    <div class="main__server--message">
+                    <div class="main__server--message text-danger">
 
                     </div>
-                    <button id="submit-message" type="button">Send</button>
+                    <button class="btn btn-lg rounded-pill border-0 bg-black text-white hover-btn" id="submit-message" type="button">Send</button>
             </form>
             
              
         </section>
         <section class="main__address">
-            <h2>
+            <h2 class="py-4 text-center">
                 Reach Me.
             </h2>
 
-            <address >
-                <div >
-                    <h3>Email:</h3>
+            <address class="d-flex flex-column gap-4">
+                <div class="d-flex" >
+                    <h3 class="pe-5">Email:</h3>
                     <p>abiy.biru78@gmail.com</p>
                 </div>
-                <div >
-                    <h3>Phone:</h3>
+                <div class="d-flex">
+                    <h3 class="pe-4">Phone:</h3>
                     <p>+251 96 082 3217</p>
                 </div>
-                <div >
-                    <h3>Address:</h3>
+                <div class="d-flex">
+                    <h3 class="pe-4">Address:</h3>
                     <p>
                         AAU College of Natural Sciences,<br>
                         Queen Elizabeth Street, 1415 Arada,<br>
@@ -134,51 +121,51 @@
         </section>
 
     </main>
-    <footer>
-        <div class="footer--div">
-            <div class="logo">
+    <footer class="footer-gradient d-flex justify-content-around">
+        <div class="footer--div d-flex flex-column">
+            <div class="logo p-3">
           
-                <a href="index.html">GamezReview</a>
+                <a href="index.html" class="pt-3 link nav-link text-white fs-2">GamezReview</a>
                 
             </div>
-            <div class="footer__socials">
-                <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
+            <div class="footer__socials ps-md-0 ps-5 d-flex flex-column justify-content-center flex-md-row gap-4 gap-md-5 ">
+                <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/" class=" socials-size ">
                     <img src="./images/linkedin.svg" alt="linkdin account" >
                 </a>
-                <a href="https://www.instagram.com/abiy.biru78/">
+                <a href="https://www.instagram.com/abiy.biru78/"  class=" socials-size ">
                     <img src="./images/instagram.svg" alt="instagram account" >
                 </a>
-                <a href="https://t.me/pealov">
+                <a href="https://t.me/pealov"  class="socials-size  ">
                     <img src="./images/telegram.svg" alt="telegram account" >
                 </a>
-                <a href="https://twitter.com/biru_abiy">
-                    <img src="./images/twitter.svg" alt="twitter account" >
+                <a href="https://twitter.com/biru_abiy"  class=" socials-size">
+                    <img src="./images/twitter.svg" class="social-size" alt="twitter account" >
                 </a>
             </div>
-            <div class="footer__copyright" >
+            <div class="footer__copyright text-white p-3" >
                 <p>Copyright &copy; 2022 GamezReview</p>
             </div>
         </div>
         
-        <nav class="footer__sitemaps">
-            <ul >
-                <li >
-                    <a href="index.html">
+        <nav class="footer__sitemaps navbar pt-5 d-flex justify-content-center">
+            <ul class="text-end' navbar-nav d-flex flex-column">
+                <li class="nav-item">
+                    <a href="#" class="link nav-link text-white">
                         Home
                     </a>
                 </li>
-                <li >
-                    <a href="archive.html">
+                <li class="nav-item">
+                    <a href="archive.html" class="link nav-link text-white">
                         Archive
                     </a>
                 </li>
-                <li >
-                    <a href="contact.html">
+                <li class="nav-item">
+                    <a href="contact.html" class="link nav-link text-white">
                         Contact 
                     </a>
                 </li>
-                <li >
-                    <a href="about.html">
+                <li class="nav-item">
+                    <a href="about.html" class="link nav-link text-white">
                         About
                     </a>
                 </li>
@@ -186,6 +173,7 @@
             </ul>
             
         </nav>
+        
     </footer>
 </body>
 </html>

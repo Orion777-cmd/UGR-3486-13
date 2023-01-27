@@ -1,0 +1,57 @@
+:root{
+    --BACKGROUND-COLOR: #1E1E1E;
+    --TEXT-COLOR: #E5E5E5;
+    --GREEN: #29AA15;   
+}
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.my-gradient{
+    background: linear-gradient(to left, var(--BACKGROUND-COLOR), var(--GREEN));
+
+}
+.my-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0, 128, 0, 0.368), rgba(0, 0, 0, 0.479)), url(../images/indexBackground/background.jpg);
+}
+.main-gradient{
+    background: linear-gradient(.25turn, #0D3B02, var(--GREEN),#0D3B02);
+}
+.btn:hover{
+    background-color: var(--TEXT-COLOR);
+    color: var(--BACKGROUND-COLOR);
+}
+.card-transparent{
+    background-color:transparent !important;
+}
+.none{
+    display: none;
+}
+.footer-gradient{
+    background:linear-gradient(to right,#29b806, grey,#29b806);
+}
+.socials-size{
+    width: 3rem;
+    height: 3rem;
+}
+.hoverBtn{
+    background-color: var(--BACKGROUND-COLOR);
+    color:var(--TEXT-COLOR)
+}
+.hoverBtn:hover{
+    background-color: var(--TEXT-COLOR);
+    color:var(--BACKGROUND-COLOR);
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration:underline;
+}
+.cardShadow{
+    border: 0;
+}
+.cardShadow:hover{
+    box-shadow: 2px 2px 5px 6px goldenrod;
+}

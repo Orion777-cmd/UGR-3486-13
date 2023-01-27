@@ -6,71 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Description</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../cssjs/descriptionStyle.css">
-    <link rel="stylesheet" href="../cssjs/styles.css">
-    <script src="../cssjs/indexScript.js" defer></script>
+    <<link rel="stylesheet" href="../cssjs/fonts.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules//bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <link rel="stylesheet" href="./css/indexstyle.css">
   </head>
-  <body>
+  <body class="bg-black">
     <header class="header">
-      <nav class="header__main-nav">
-            
-        <div class="logo" >
-            <a href="index.html">
-                GamezReview
-            </a>
-        </div>
-        <div class="header__media_buttons">
-            <button
-            type="button"
-            aria-controls="header-nav-list"
-            aria-expanded="false"
-            aria-label="Expand Menu"
-            id="bars"
-            class="menu-btn "
-            >
-            <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
-            </button>
-            <button
-                type="button"
-                aria-controls="header-nav-list"
-                aria-expanded="true"
-                aria-label="Collapse Menu"
-                id="xmark"
-                class="menu-btn none"
-            >
-                <img src="./images/xmark.svg" alt="xmark" width="25" height="25"/>
-            </button>
-        </div>
-        
-        <ul id="header--nav-list" class="navlist toggleList">
+      <div class=" my-gradient rounded-bottom-4 py-4">
 
-            <li >
-                <a href="archive.html">
-                    Archive
-                </a>
-            </li>
-            <li >
-                <a href="contact.html">
-                    Contact 
-                </a>
-            </li>
-            <li >
-                <a href="about.html">
-                    About
-                </a>
-            </li>
+        <nav class=" container navbar navbar-expand-md navbar-dark" >
             
-        </ul>
-        </div>
+                <div class="" >
+                    <a href="index.html" class="navbar-brand border border-5 border-white hover-success ">
+                        GamezReview
+                    </a>
+                </div>    
+
+                <button class="navbar-toggler me-2 mt-2 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navmenu">
+                  <ul id="header--nav-list" class="navbar-nav  ms-auto text-end pe-4">
     
-   
-</nav>
+                    <li class="nav-item " >
+                        <a href="archive.html" class="link nav-link">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="nav-item " >
+                        <a href="contact.html" class="link nav-link">
+                            Contact 
+                        </a>
+                    </li >
+                    <li class="nav-item ">
+                        <a href="about.html" class="link nav-link">
+                            About
+                        </a>
+                    </li>
+                    
+                </ul>
+                </div>
+            
+           
+        </nav>
+      </div>
     </header>
-    <main class="main--description">
+    <main class="main--description container-md main-gradient">
       <section class="section--detail">
         
-          <div class="detail-container">
-            <div class="detail">
+          <div class="detail-container pt-5 d-flex flex-column gap-3 align-items-center flex-md-row justify-content-md-around">
+            <div class="detail text-white w-90">
               <p>Name: Grand Theft Auto V</p>
               <p>Genre: Action</p>
               <p>Rating: 4</p>
@@ -80,12 +67,13 @@
             
   
             <img
+            class="w-75 rounded-4"
               src="./images/GameImages/Grand Theft Auto V/mainImage.jpg"
               alt=" image of the selected game"
               
             />
           </div>
-          <div class="description" >
+          <div class="description pt-5 px-2 text-white w-80 text-center" >
             <p>Description: <br>
               <br>
               The story of three unquely-different criminals
@@ -103,38 +91,38 @@
   
         
       </section>
-      <section class="section--requirement">
+      <section class="section--requirement pt-5 text-white d-flex flex-column align-items-center gap-4">
         
         <h2>Pc Requirement</h2>
         <div class="window">
           <p>minimum requirements for Windows</p>
-          <table>
-            <thead>
-              <tr>
-                <th>property</th>
-                <th>minimum Requirement</th>
+          <table class="table border text-white">
+            <thead >
+              <tr >
+                <th class="border">property</th>
+                <th class="border">minimum Requirement</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>OS</td>
-                <td>Windows 7 64 bit</td>
+                <td class="border">OS</td>
+                <td class="border">Windows 7 64 bit</td>
               </tr>
               <tr>
-                <td>Processor</td>
-                <td>Intel core i5 3470</td>
+                <td class="border">Processor</td>
+                <td class="border">Intel core i5 3470</td>
               </tr>
               <tr>
-                <td>RAM storage</td>
-                <td>8 GB</td>
+                <td class="border">RAM storage</td>
+                <td class="border">8 GB</td>
               </tr>
               <tr>
-                <td>Ram Graphics</td>
-                <td>NVIDIA GTX 660 2GB</td>
+                <td class="border">Ram Graphics</td>
+                <td class="border">NVIDIA GTX 660 2GB</td>
               </tr>
               <tr>
-                <td>Available Storage</td>
-                <td>72 GB</td>
+                <td class="border">Available Storage</td>
+                <td class="border">72 GB</td>
               </tr>
             </tbody>
           </table>
@@ -142,113 +130,116 @@
 
         
       </section>
-      <section class="section--trailer">
+      <section class="section--trailer w-100 pt-5 mx-auto">
+        <div class="w-75 mx-auto">
+          <video controls class="w-100 text-center" >
+          
+            <source src="./video/trailer.mp4" type="video/mp4">
+            <track src="./video/track.vtt" kind="subtitles" srclang="en"
+            label="English" default>
+          </video>
+        </div>
         
-          <video controls >
-
-          <source src="./video/trailer.mp4" type="video/mp4">
-          <track src="./video/track.vtt" kind="subtitles" srclang="en"
-          label="English" default>
-        </video>
-
-
-        <div  id="screen-shots-container">
-          <h3>Screenshots taken from the game</h3>
-          <div class="screenshots">
-            <img
-            src="./images/GameImages/Screenshots/screenshot1.jpg"
-            alt="screen shot taken from the game"
-           
-          />
-          <img
-          src="./images/GameImages/Screenshots/screenshot2.jpg"
-          alt="screen shot taken from the game"
           
-         />
-          <img
-          src="./images/GameImages/Screenshots/screenshot3.jpg"
-          alt="screen shot taken from the game"
-         
-          />
-          <img
-          src="./images/GameImages/Screenshots/screenshot4.jpg"
-          alt="screen shot taken from the game"
-          
-          />
+
+
+        <div  id="screen-shots-container" class="py-5 text-white d-flex flex-column align-items-center justify-content-center">
+          <h3 class="pb-4">Screenshots taken from the game</h3>
+          <div class="screenshots row">
+            <div class="py-sm-3 rounded-2 shadow-lg col-12 col-sm-6 col-md-4 col-lg-3">
+              <img
+                class="card card-transparent w-100 text-decoration-none  object-fit-cover"
+                src="./images/GameImages/Screenshots/screenshot1.jpg"
+                alt="screen shot taken from the game"
+              
+              />
+            </div>
+            
+            <div class=" py-sm-3 rounded-2 shadow-lg col-12 col-sm-6 col-md-4 col-lg-3">
+              <img
+                class="card card-transparent w-100 text-decoration-none  object-fit-cover"
+                src="./images/GameImages/Screenshots/screenshot2.jpg"
+                alt="screen shot taken from the game"
+                
+              />
           </div>
           
-
-      
+          <div class=" py-sm-3 rounded-2 shadow-lg col-12 col-sm-6 col-md-4 col-lg-3">
+            <img
+              class="card card-transparent w-100 text-decoration-none  object-cover-fit"
+              src="./images/GameImages/Screenshots/screenshot3.jpg"
+              alt="screen shot taken from the game"
+            
+            />
+          </div>
+          <div class=" py-sm-3 rounded-2 shadow-lg col-12 col-sm-6 col-md-4 col-lg-3">
+            <img
+              class="card card-transparent w-100 text-decoration-none  object-fit-cover"
+              src="./images/GameImages/Screenshots/screenshot4.jpg"
+              alt="screen shot taken from the game"
+              
+            />
+          </div>
+          
+          </div>
 
         </div>
       </section>
-      <!-- <section >
-        <div >
-          <a href="./description.html"
-            >to the description page of the selected game</a
-          >
-           <a href="description.html">
-                <img src="" alt="image of the selected game" width="70" height="70" />
-                <div id="desc">
-                  <p>name</p>
-                  <p>rating</p>
-                </div>
-            </a> 
-        </div>
-      </section> -->
+     
     </main>
-    <footer >
-      <div class="footer--div">
-        <div class="logo">
-      
-            <a href="index.html">GamezReview</a>
-            
-        </div>
-        <div class="footer__socials">
-            <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
-                <img src="./images/linkedin.svg" alt="linkdin account" >
-            </a>
-            <a href="https://www.instagram.com/abiy.biru78/">
-                <img src="./images/instagram.svg" alt="instagram account" >
-            </a>
-            <a href="https://t.me/pealov">
-                <img src="./images/telegram.svg" alt="telegram account" >
-            </a>
-            <a href="https://twitter.com/biru_abiy">
-                <img src="./images/twitter.svg" alt="twitter account" >
-            </a>
-        </div>
-        <div class="footer__copyright" >
-            <p>Copyright &copy; 2022 GamezReview</p>
-        </div>
-    </div>
-    
-    <nav class="footer__sitemaps">
-        <ul >
-            <li >
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li >
-                <a href="archive.html">
-                    Archive
-                </a>
-            </li>
-            <li >
-                <a href="contact.html">
-                    Contact 
-                </a>
-            </li>
-            <li >
-                <a href="about.html">
-                    About
-                </a>
-            </li>
-            
-        </ul>
+    <footer class="footer-gradient d-flex justify-content-around">
+      <div class="footer--div d-flex flex-column">
+          <div class="logo p-3">
         
-    </nav>
-    </footer>
+              <a href="index.html" class="pt-3 link nav-link text-white fs-2">GamezReview</a>
+              
+          </div>
+          <div class="footer__socials ps-md-0 ps-5 d-flex flex-column justify-content-center flex-md-row gap-4 gap-md-5 ">
+              <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/" class=" socials-size ">
+                  <img src="./images/linkedin.svg" alt="linkdin account" >
+              </a>
+              <a href="https://www.instagram.com/abiy.biru78/"  class=" socials-size ">
+                  <img src="./images/instagram.svg" alt="instagram account" >
+              </a>
+              <a href="https://t.me/pealov"  class="socials-size  ">
+                  <img src="./images/telegram.svg" alt="telegram account" >
+              </a>
+              <a href="https://twitter.com/biru_abiy"  class=" socials-size">
+                  <img src="./images/twitter.svg" class="social-size" alt="twitter account" >
+              </a>
+          </div>
+          <div class="footer__copyright text-white p-3" >
+              <p>Copyright &copy; 2022 GamezReview</p>
+          </div>
+      </div>
+      
+      <nav class="footer__sitemaps navbar pt-5 d-flex justify-content-center">
+          <ul class="text-end' navbar-nav d-flex flex-column">
+              <li class="nav-item">
+                  <a href="#" class="link nav-link text-white">
+                      Home
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="archive.html" class="link nav-link text-white">
+                      Archive
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="contact.html" class="link nav-link text-white">
+                      Contact 
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="about.html" class="link nav-link text-white">
+                      About
+                  </a>
+              </li>
+              
+          </ul>
+          
+      </nav>
+      
+  </footer>
   </body>
 </html>

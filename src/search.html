@@ -6,583 +6,984 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Searched</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../cssjs/styles.css">
-    <script src="../cssjs/indexScript.js" defer></script>
+    <link rel="stylesheet" href="../cssjs/fonts.css">
+   
     <script src="../cssjs/searchScript.js" defer></script>
     <link rel="stylesheet" href="../cssjs/searchStyle.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules//bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <link rel="stylesheet" href="./css/indexstyle.css">
 </head>
-<body>
+<body class="bg-black">
     <header class="header">
-        <nav class="header__main-nav">
+      <div class=" my-gradient rounded-bottom-4 py-4">
+
+        <nav class=" container navbar navbar-expand-md navbar-dark" >
             
-            <div class="logo" >
-                <a href="index.html">
-                    GamezReview
-                </a>
-            </div>
-            <div class="header__media_buttons">
-                <button
-                type="button"
-                aria-controls="header-nav-list"
-                aria-expanded="false"
-                aria-label="Expand Menu"
-                id="bars"
-                class="menu-btn "
-                >
-                <img src="./images/bars.svg" alt="Hamburger" width="25" height="25" />
+                <div class="" >
+                    <a href="index.html" class="navbar-brand border border-5 border-white hover-success ">
+                        GamezReview
+                    </a>
+                </div>    
+
+                <button class="navbar-toggler me-2 mt-2 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <button
-                    type="button"
-                    aria-controls="header-nav-list"
-                    aria-expanded="true"
-                    aria-label="Collapse Menu"
-                    id="xmark"
-                    class="menu-btn none"
-                >
-                    <img src="./images/xmark.svg" alt="xmark" width="25" height="25"/>
-                </button>
-            </div>
-            
-            <ul id="header--nav-list" class="navlist toggleList">
-    
-                <li >
-                    <a href="archive.html">
-                        Archive
-                    </a>
-                </li>
-                <li >
-                    <a href="contact.html">
-                        Contact 
-                    </a>
-                </li>
-                <li >
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
                 
-            </ul>
-            </div>
-        
-       
-    </nav>
-    </header>
-    <main>
-        <div class="main--searchContainer"  >
-           
-            <input class="inputText" type="text" name="text-area" placeholder="search for a game">
-            <button class="searchBtn" name="search" type="button" aria-label="search using the official name of the game">Search</button>
-            
-        </div>
-        <section class="main__section--cards">
-            <div class="main__popular-games">
-                  <a href="description.html"  class="cards" data-genre="action" data-name="grand theft auto v">
-                    <img
-                      src="./images/GameImages/Grand Theft Auto V/mainImage.jpg"
-                      alt="image of the game GTA V"
-                    />
-                    <div id="desc">
-                      <p>Grand Theft Auto V</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="the witcher wild hunt">
-                    <img
-                      src="./images/GameImages/The witcher wild hunt/mainImage.jpg"
-                      alt="image of the game the witcher wild hunt"
-                     
-                    />
-                    <div id="desc">
-                      <p>The Witcher</p>
-                      <p>4.6</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="apex legends">
-                    <img
-                      src="./images/GameImages/apex legends/mainImage.jpg"
-                      alt="image of the game apex legends"
-                     
-                    />
-                    <div id="desc">
-                      <p>Apex Legends</p>
-                      <p>4.2</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="assassins creed IV black flag">
-                    <img
-                      src="./images/GameImages/Assassins Creed IV Black Flag/mainImage.jpg"
-                      alt="image of the game assasin's creed IV"
-                     
-                    />
-                    <div id="desc">
-                      <p>Assasin's Creed IV</p>
-                      <p>4.34</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="batman arkham night">
-                    <img
-                      src="./images/GameImages/Batman Arkham night/mainImage.jpg"
-                      alt="image of the game batman arkham night"
-                     
-                    />
-                    <div id="desc">
-                      <p>Batman Arkham night</p>
-                      <p>4.12</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="bioshock">
-                    <img
-                      src="./images/GameImages/bioshock/mainImage.jpg"
-                      alt="image of the game bioshock"
-                     
-                    />
-                    <div id="desc">
-                      <p>Bioshock</p>
-                      <p>3.9</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="borderlands 2">
-                    <img
-                      src="./images/GameImages/borderlands 2/mainImage.jpg"
-                      alt="image of the game borderlands 2"
-                     
-                    />
-                    <div id="desc">
-                      <p>Borderlands 2</p>
-                      <p>3.8</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="action" data-name="control">
-                    <img
-                      src="./images/GameImages/control/mainImage.jpg"
-                      alt="image of the game control"
-                     
-                    />
-                    <div id="desc">
-                      <p>Control</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="cyberpunk 2077">
-                    <img
-                      src="./images/GameImages/cyberpunk 2077/mainImage.jpg"
-                      alt="image of the game cyberpunk 2077"
-                     
-                    />
-                    <div id="desc">
-                      <p>cyberpunk 2077</p>
-                      <p>4.3</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="dark souls III">
-                    <img
-                      src="./images/GameImages/dark souls III/mainImage.jpg"
-                      alt="image of the game dark souls III"
-                     
-                    />
-                    <div id="desc">
-                      <p>Dark souls III</p>
-                      <p>4.1</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="dead cells">
-                    <img
-                      src="./images/GameImages/Dead cells/mainImage.jpg"
-                      alt="image of the game dead cells"
-                     
-                    />
-                    <div id="desc">
-                      <p>Dead cells</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="dead space">
-                    <img
-                      src="./images/GameImages/Dead space/mainImage.jpg"
-                      alt="image of the game dead space"
-                     
-                    />
-                    <div id="desc">
-                      <p>Dead Space</p>
-                      <p>3.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="dishonoured">
-                    <img
-                      src="./images/GameImages/dishonoured/mainImage.jpg"
-                      alt="image of the game Dishonoured"
-                     
-                    />
-                    <div id="desc">
-                      <p>Dishonoured</p>
-                      <p>4.54</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="doom">
-                    <img
-                      src="./images/GameImages/Doom/mainImage.jpg"
-                      alt="image of the game doom"
-                     
-                    />
-                    <div id="desc">
-                      <p>Doom</p>
-                      <p>4.15</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="god of war">
-                    <img
-                      src="./images/GameImages/God of War/mainImage.jpg"
-                      alt="image of the game god of war"
-                     
-                    />
-                    <div id="desc">
-                      <p>god of War</p>
-                      <p>4.75</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="half life 2">
-                    <img
-                      src="./images/GameImages/half life 2/mainImage.jpg"
-                      alt="image of the game half life 2"
-                     
-                    />
-                    <div id="desc">
-                      <p>Half life 2</p>
-                      <p>4.25</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="hitman">
-                    <img
-                      src="./images/GameImages/Hitman/mainImage.jpg"
-                      alt="image of the game htiman"
-                     
-                    />
-                    <div id="desc">
-                      <p>Hitman</p>
-                      <p>4.85</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="horizon zero dawn">
-                    <img
-                      src="./images/GameImages/horizon zero dawn/mainImage.jpg"
-                      alt="image of the game horizon zero dawn"
-                     
-                    />
-                    <div id="desc">
-                      <p>horizon zero dawn</p>
-                      <p>4.35</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards"   data-genre="adventure" data-name="injustice gods">
-                    <img
-                      src="./images/GameImages/injustice gods/mainImage.jpg"
-                      alt="image of the game injustice gods"
-                     
-                    />
-                    <div id="desc">
-                      <p>Injustice gods</p>
-                      <p>3.8</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="just cause 3">
-                    <img
-                      src="./images/GameImages/Just Cause 3/mainImage.jpg"
-                      alt="image of the game just cause 3"
-                     
-                    />
-                    <div id="desc">
-                      <p>Just Cause 3</p>
-                      <p>4.0</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="left 4 dead">
-                    <img
-                      src="./images/GameImages/left 4 dead 2/mainImage.jpg"
-                      alt="image of the game left for dead"
-                     
-                    />
-                    <div id="desc">
-                      <p>left 4 dead</p>
-                      <p>4.45</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="life is strange">
-                    <img
-                      src="./images/GameImages/life is strange/mainImage.jpg"
-                      alt="image of the game life is strange"
-                     
-                    />
-                    <div id="desc">
-                      <p>life is strange</p>
-                      <p>3.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="little nightmares">
-                    <img
-                      src="./images/GameImages/Little Nightmares/mainImage.jpg"
-                      alt="image of the game Little nightmares"
-                     
-                    />
-                    <div id="desc">
-                      <p>Little Nightmares</p>
-                      <p>4.25</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="spiderman marvel">
-                    <img
-                      src="./images/GameImages/Marvel's spiderman/mainImage.jpg"
-                      alt="image of the game spiderman"
-                     
-                    />
-                    <div id="desc">
-                      <p>Marvel's Spiderman</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="metro 2033">
-                    <img
-                      src="./images/GameImages/metro 2033/mainImage.jpg"
-                      alt="image of the game metro 2033"
-                     
-                    />
-                    <div id="desc">
-                      <p>Metro 2033</p>
-                      <p>4.05</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="middle earth shadow of mordor">
-                    <img
-                      src="./images/GameImages/middle earth shadow of mordor/mainImage.jpg"
-                      alt="image of the game middle earth"
-                     
-                    />
-                    <div id="desc">
-                      <p>Middle Earth</p>
-                      <p>4.6</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="horror" data-name="payday 2">
-                    <img
-                      src="./images/GameImages/payday 2/mainImage.jpg"
-                      alt="image of the game payday 2"
-                     
-                    />
-                    <div id="desc">
-                      <p>Payday 2</p>
-                      <p>4.25</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="portal">
-                    <img
-                      src="./images/GameImages/portal/mainImage.jpg"
-                      alt="image of the game"
-                     
-                    />
-                    <div id="desc">
-                      <p>Portal 2</p>
-                      <p>4.75</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="prey">
-                    <img
-                      src="./images/GameImages/prey/mainImage.jpg"
-                      alt="image of the game prey"
-                     
-                    />
-                    <div id="desc">
-                      <p>Prey</p>
-                      <p>4.15</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="pubg">
-                    <img
-                      src="./images/GameImages/PUBG/mainImage.jpg"
-                      alt="image of the game pubg"
-                     
-                    />
-                    <div id="desc">
-                      <p>PUBG</p>
-                      <p>4.3</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="red dead redemption">
-                    <img
-                      src="./images/GameImages/Red dead redemption 2/mainImage.jpg"
-                      alt="image of the game red dead redemption"
-                     
-                    />
-                    <div id="desc">
-                      <p>Red Dead REdemption</p>
-                      <p>4.25</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="rocket league">
-                    <img
-                      src="./images/GameImages/Rocket Leauge/mainImage.jpg"
-                      alt="image of the game rocket league"
-                     
-                    />
-                    <div id="desc">
-                      <p>Rocket League</p>
-                      <p>3.65</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="spec ops the line">
-                    <img
-                      src="./images/GameImages/spec ops the line/mainImage.jpg"
-                      alt="image of the game spec ops the line"
-                     
-                    />
-                    <div id="desc">
-                      <p>spec ops the line</p>
-                      <p>4.45</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="star wars jedi fallen order">
-                    <img
-                      src="./images/GameImages/Star Wars Jedi fallen order/mainImage.jpg"
-                      alt="image of the game star wars jedi"
-                     
-                    />
-                    <div id="desc">
-                      <p>Star Wars Jedi</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="the elder scrolls v">
-                    <img
-                      src="./images/GameImages/The elder scrolls V/mainImage.jpg"
-                      alt="image of the game the elder scrolls"
-                     
-                    />
-                    <div id="desc">
-                      <p>The elder Scrolls</p>
-                      <p>4.15</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="war" data-name="the last of us">
-                    <img
-                      src="./images/GameImages/the last of us/mainImage.jpg"
-                      alt="image of the game the last of us"
-                     
-                    />
-                    <div id="desc">
-                      <p>The Last of Us</p>
-                      <p>4.0</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="the witcher 2 assasin of kings">
-                    <img
-                      src="./images/GameImages/The withcher 2 assasin of kings/mainImage.jpg"
-                      alt="image of the game the witcher 2"
-                     
-                    />
-                    <div id="desc">
-                      <p>The Witcher 2</p>
-                      <p>4.5</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="tomb raider">
-                    <img
-                      src="./images/GameImages/Tomb-raider/mainImage.jpg"
-                      alt="image of the game Tomb-raider"
-                     
-                    />
-                    <div id="desc">
-                      <p>Tomb Raider</p>
-                      <p>4.05</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="warframe">
-                    <img
-                      src="./images/GameImages/warframe/mainImage.jpg"
-                      alt="image of the game warframe"
-                     
-                    />
-                    <div id="desc">
-                      <p>Warframe</p>
-                      <p>4.35</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="watch dog">
-                    <img
-                      src="./images/GameImages/watch dog/mainImage.jpg"
-                      alt="image of the game watch dog"
-                     
-                    />
-                    <div id="desc">
-                      <p>Watch Dog</p>
-                      <p>4.65</p>
-                    </div>
-                  </a>
-                  <a href="description.html"  class="cards" data-genre="sport" data-name="wolfenestien">
-                    <img
-                      src="./images/GameImages/wolfenestien the new order/mainImage.jpg"
-                      alt="image of the game wolfenestien"
-                     
-                    />
-                    <div id="desc">
-                      <p>Wolfenestien</p>
-                      <p>4.3</p>
-                    </div>
-                  </a>
+                <div class="collapse navbar-collapse" id="navmenu">
+                  <ul id="header--nav-list" class="navbar-nav  ms-auto text-end pe-4">
+    
+                    <li class="nav-item " >
+                        <a href="archive.html" class="link nav-link">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="nav-item " >
+                        <a href="contact.html" class="link nav-link">
+                            Contact 
+                        </a>
+                    </li >
+                    <li class="nav-item ">
+                        <a href="about.html" class="link nav-link">
+                            About
+                        </a>
+                    </li>
+                    
+                </ul>
                 </div>
             
+           
+        </nav>
+      </div>
+    </header>
+    <main class="main-gradient text-white container-md pb-5">
+        <div class="main--searchContainer py-5 mx-auto d-flex justify-content-center w-75" >
+           
+            <input class="inputText ps-3 rounded-start-pill border-0 w-75" type="text" name="text-area" placeholder="search for a game">
+            <button class="searchBtn btn px-3 rounded-end-pill border-0 bg-black text-white hover-btn" name="search" type="button" aria-label="search using the official name of the game">Search</button>
+            
+        </div>
+        <section>
+          <div
+            class="main__popular-games container row justify-content-center justify-content-md-start pl-3 mx-auto"
+          >
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="grand theft auto"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Grand Theft Auto V/mainImage.jpg"
+                  alt="image of the game GTA V"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Grand Theft Auto V</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="the witcher"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/The witcher wild hunt/mainImage.jpg"
+                  alt="image of the game the witcher wild hunt"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">The Witcher</p>
+                  <p class="text-white">4.6</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="apex legends"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/apex legends/mainImage.jpg"
+                  alt="image of the game apex legends"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Apex Legends</p>
+                  <p class="text-white">4.2</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="assasin's creed"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Assassins Creed IV Black Flag/mainImage.jpg"
+                  alt="image of the game assasin's creed IV"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Assasin's Creed IV</p>
+                  <p class="text-white">4.34</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="batman arkham night"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Batman Arkham night/mainImage.jpg"
+                  alt="image of the game batman arkham night"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Batman Arkham night</p>
+                  <p class="text-white">4.12</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="bioshock"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/bioshock/mainImage.jpg"
+                  alt="image of the game bioshock"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Bioshock</p>
+                  <p class="text-white">3.9</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="borderlands 2"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/borderlands 2/mainImage.jpg"
+                  alt="image of the game borderlands 2"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Borderlands 2</p>
+                  <p class="text-white">3.8</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="action"
+              data-name="control"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/control/mainImage.jpg"
+                  alt="image of the game control"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Control</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="cyberpunk 2077"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/cyberpunk 2077/mainImage.jpg"
+                  alt="image of the game cyberpunk 2077"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">cyberpunk 2077</p>
+                  <p class="text-white">4.3</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="dark souls III"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/dark souls III/mainImage.jpg"
+                  alt="image of the game dark souls III"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Dark souls III</p>
+                  <p class="text-white">4.1</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="dead cells"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Dead cells/mainImage.jpg"
+                  alt="image of the game dead cells"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Dead cells</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="dead space"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Dead space/mainImage.jpg"
+                  alt="image of the game dead space"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Dead Space</p>
+                  <p class="text-white">3.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="dishonoured"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/dishonoured/mainImage.jpg"
+                  alt="image of the game Dishonoured"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Dishonoured</p>
+                  <p class="text-white">4.54</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="doom"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Doom/mainImage.jpg"
+                  alt="image of the game doom"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Doom</p>
+                  <p class="text-white">4.15</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="god of war"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/God of War/mainImage.jpg"
+                  alt="image of the game god of war"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">god of War</p>
+                  <p class="text-white">4.75</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="half life 2"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/half life 2/mainImage.jpg"
+                  alt="image of the game half life 2"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Half life 2</p>
+                  <p class="text-white">4.25</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="hitman"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Hitman/mainImage.jpg"
+                  alt="image of the game htiman"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Hitman</p>
+                  <p class="text-white">4.85</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="horizon zero dawn"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/horizon zero dawn/mainImage.jpg"
+                  alt="image of the game horizon zero dawn"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">horizon zero dawn</p>
+                  <p class="text-white">4.35</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="adventure"
+              data-name="injustice gods"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/injustice gods/mainImage.jpg"
+                  alt="image of the game injustice gods"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Injustice gods</p>
+                  <p class="text-white">3.8</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="just cause"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Just Cause 3/mainImage.jpg"
+                  alt="image of the game just cause 3"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Just Cause 3</p>
+                  <p class="text-white">4.0</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="left 4 dead"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/left 4 dead 2/mainImage.jpg"
+                  alt="image of the game left for dead"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">left 4 dead</p>
+                  <p class="text-white">4.45</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="life is strange"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/life is strange/mainImage.jpg"
+                  alt="image of the game life is strange"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">life is strange</p>
+                  <p class="text-white">3.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="little nightmares"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Little Nightmares/mainImage.jpg"
+                  alt="image of the game Little nightmares"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Little Nightmares</p>
+                  <p class="text-white">4.25</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="marvel's spiderman"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Marvel's spiderman/mainImage.jpg"
+                  alt="image of the game spiderman"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Marvel's Spiderman</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="metro 2033"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/metro 2033/mainImage.jpg"
+                  alt="image of the game metro 2033"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Metro 2033</p>
+                  <p class="text-white">4.05</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="middle earth"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/middle earth shadow of mordor/mainImage.jpg"
+                  alt="image of the game middle earth"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Middle Earth</p>
+                  <p class="text-white">4.6</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="horror"
+              data-name="payday 2"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/payday 2/mainImage.jpg"
+                  alt="image of the game payday 2"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Payday 2</p>
+                  <p class="text-white">4.25</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="portal 2"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/portal/mainImage.jpg"
+                  alt="image of the game"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Portal 2</p>
+                  <p class="text-white">4.75</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="prey"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/prey/mainImage.jpg"
+                  alt="image of the game prey"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Prey</p>
+                  <p class="text-white">4.15</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="pubg"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/PUBG/mainImage.jpg"
+                  alt="image of the game pubg"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">PUBG</p>
+                  <p class="text-white">4.3</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="red dead redemption"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Red dead redemption 2/mainImage.jpg"
+                  alt="image of the game red dead redemption"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Red Dead REdemption</p>
+                  <p class="text-white">4.25</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="rocket league"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Rocket Leauge/mainImage.jpg"
+                  alt="image of the game rocket league"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Rocket League</p>
+                  <p class="text-white">3.65</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="spec ops the line"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/spec ops the line/mainImage.jpg"
+                  alt="image of the game spec ops the line"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">spec ops the line</p>
+                  <p class="text-white">4.45</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="star wars jedi"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Star Wars Jedi fallen order/mainImage.jpg"
+                  alt="image of the game star wars jedi"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Star Wars Jedi</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="the elder scrolls"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/The elder scrolls V/mainImage.jpg"
+                  alt="image of the game the elder scrolls"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">The elder Scrolls</p>
+                  <p class="text-white">4.15</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="war"
+              data-name="the last of us"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/the last of us/mainImage.jpg"
+                  alt="image of the game the last of us"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">The Last of Us</p>
+                  <p class="text-white">4.0</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="the withcher 2"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/The withcher 2 assasin of kings/mainImage.jpg"
+                  alt="image of the game the witcher 2"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">The Witcher 2</p>
+                  <p class="text-white">4.5</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="tomb raider"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/Tomb-raider/mainImage.jpg"
+                  alt="image of the game Tomb-raider"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Tomb Raider</p>
+                  <p class="text-white">4.05</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="warframe"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/warframe/mainImage.jpg"
+                  alt="image of the game warframe"
+                />
+                <div id="desc">
+                  <p class="text-white">Warframe</p>
+                  <p class="text-white">4.35</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="watch dog"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/watch dog/mainImage.jpg"
+                  alt="image of the game watch dog"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Watch Dog</p>
+                  <p class="text-white">4.65</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="description.html"
+              class="cardShadow cards px-3 text-decoration-none col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+              data-genre="sport"
+              data-name="wolfenestien"
+            >
+              <div class="card card-transparent rounded-2 shadow-lg">
+                <img
+                  class="rounded-2 rounded-top"
+                  src="./images/GameImages/wolfenestien the new order/mainImage.jpg"
+                  alt="image of the game wolfenestien"
+                />
+                <div
+                  id="desc"
+                  class="d-flex justify-content-around py-2 text-decoration-none"
+                >
+                  <p class="text-white">Wolfenestien</p>
+                  <p class="text-white">4.3</p>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+         
         </section>
         
     </main>
-    <footer >
-        <div class="footer--div">
-            <div class="logo">
-          
-                <a href="index.html">GamezReview</a>
-                
-            </div>
-            <div class="footer__socials">
-                <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/">
-                    <img src="./images/linkedin.svg" alt="linkdin account" >
-                </a>
-                <a href="https://www.instagram.com/abiy.biru78/">
-                    <img src="./images/instagram.svg" alt="instagram account" >
-                </a>
-                <a href="https://t.me/pealov">
-                    <img src="./images/telegram.svg" alt="telegram account" >
-                </a>
-                <a href="https://twitter.com/biru_abiy">
-                    <img src="./images/twitter.svg" alt="twitter account" >
-                </a>
-            </div>
-            <div class="footer__copyright" >
-                <p>Copyright &copy; 2022 GamezReview</p>
-            </div>
-        </div>
+    <footer class="footer-gradient d-flex justify-content-around">
+      <div class="footer--div d-flex flex-column">
+          <div class="logo p-3">
         
-        <nav class="footer__sitemaps">
-            <ul >
-                <li >
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li >
-                    <a href="archive.html">
-                        Archive
-                    </a>
-                </li>
-                <li >
-                    <a href="contact.html">
-                        Contact 
-                    </a>
-                </li>
-                <li >
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-                
-            </ul>
-            
-        </nav>
-    </footer>
+              <a href="index.html" class="pt-3 link nav-link text-white fs-2">GamezReview</a>
+              
+          </div>
+          <div class="footer__socials ps-md-0 ps-5 d-flex flex-column justify-content-center flex-md-row gap-4 gap-md-5 ">
+              <a href="https://www.linkedin.com/in/abiy-biru-aa2ba3227/" class=" socials-size ">
+                  <img src="./images/linkedin.svg" alt="linkdin account" >
+              </a>
+              <a href="https://www.instagram.com/abiy.biru78/"  class=" socials-size ">
+                  <img src="./images/instagram.svg" alt="instagram account" >
+              </a>
+              <a href="https://t.me/pealov"  class="socials-size  ">
+                  <img src="./images/telegram.svg" alt="telegram account" >
+              </a>
+              <a href="https://twitter.com/biru_abiy"  class=" socials-size">
+                  <img src="./images/twitter.svg" class="social-size" alt="twitter account" >
+              </a>
+          </div>
+          <div class="footer__copyright text-white p-3" >
+              <p>Copyright &copy; 2022 GamezReview</p>
+          </div>
+      </div>
+      
+      <nav class="footer__sitemaps navbar pt-5 d-flex justify-content-center">
+          <ul class="text-end' navbar-nav d-flex flex-column">
+              <li class="nav-item">
+                  <a href="#" class="link nav-link text-white">
+                      Home
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="archive.html" class="link nav-link text-white">
+                      Archive
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="contact.html" class="link nav-link text-white">
+                      Contact 
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="about.html" class="link nav-link text-white">
+                      About
+                  </a>
+              </li>
+              
+          </ul>
+          
+      </nav>
+      
+  </footer>
 </body>
 </html>
